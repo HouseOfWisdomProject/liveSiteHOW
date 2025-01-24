@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import JoinUsBox from "./components/JoinUsBox";
 import Programs from "./components/Programs";
 
+
 const programs = [
   {
     title: "Math (K-12)",
@@ -64,17 +65,17 @@ const HomePage = () => {
             <JoinUsBox
               title="Become a Student"
               image="/student.jpg" // Static placeholder image
-              link="/become-a-student"
+              link="mailto:laith@houseofwisdomwa.org"
             />
             <JoinUsBox
               title="Become a Tutor"
               image="/tutor.jpg" // Static placeholder image
-              link="/become-a-tutor"
+              link="mailto:laith@houseofwisdomwa.org"
             />
             <JoinUsBox
               title="Become a Partner"
               image="/partner.jpg" // Static image
-              link="/become-a-partner"
+              link="mailto:ahmadhilalabid@houseofwisdomwa.org"
               style={{ backgroundPosition: "center-60" }} // Ensures static positioning
             />
           </div>
