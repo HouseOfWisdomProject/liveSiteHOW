@@ -116,9 +116,9 @@ const HomePage = () => {
           </p>
         </div>
 
-        <Programs programs={programs} id="programs"/>
+        <Programs programs={programs}/>
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10" id="prog">
           <p className="text-lg leading-relaxed mb-8">Together, we'll bridge the gap in educational inequality.</p>
         </div>
         {/*YOUTUBE*/}

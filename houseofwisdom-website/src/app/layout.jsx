@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "House of Wisdom WA - Empowering Immigrants and Refugees",
+  title: "House of Wisdom",
   description:
     "The House of Wisdom WA provides academic and social support to immigrants, refugees, and international students, helping them transition successfully to life in America.",
   keywords: "House of Wisdom, immigrants, refugees, tutoring, academic support, community empowerment",
@@ -32,15 +32,7 @@ export const metadata = {
         alt: "House of Wisdom WA",
       },
     ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@HouseOfWisdomWA",
-    title: "House of Wisdom WA",
-    description:
-      "Empowering immigrants and refugees through academic support and community engagement.",
-    image: "https://houseofwisdomwa.com/twitter-image.jpg",
-  },
+  }
 };
 
 export default function RootLayout({ children }) {
@@ -54,11 +46,6 @@ export default function RootLayout({ children }) {
         <meta property="og:url" content={metadata.openGraph.url} />
         <meta property="og:type" content={metadata.openGraph.type} />
         <meta property="og:image" content={metadata.openGraph.images[0].url} />
-        <meta name="twitter:card" content={metadata.twitter.card} />
-        <meta name="twitter:site" content={metadata.twitter.site} />
-        <meta name="twitter:title" content={metadata.twitter.title} />
-        <meta name="twitter:description" content={metadata.twitter.description} />
-        <meta name="twitter:image" content={metadata.twitter.image} />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

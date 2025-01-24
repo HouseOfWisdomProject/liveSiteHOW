@@ -1,15 +1,16 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation"; // Next.js 13 navigation hooks
-import Popup from "./Popup"; // Import the Popup component
+import { usePathname, useRouter } from "next/navigation";
+import Popup from "./Popup";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [popupMessage, setPopupMessage] = useState(null); // State for popup message
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [popupMessage, setPopupMessage] = useState(null);
 
-  const pathname = usePathname(); // Get current route
-  const router = useRouter(); // Navigate programmatically
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,102 +18,177 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll); // Cleanup listener
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleSmoothScroll = async (e, targetId) => {
     e.preventDefault();
-
     if (pathname !== "/") {
-      await router.push("/"); // Navigate to the homepage
+      await router.push("/");
     }
-
-    // Smoothly scroll to the target element
     setTimeout(() => {
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
         targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     }, 100);
+    setIsMenuOpen(false);
   };
 
   const handlePopup = (message) => {
-    setPopupMessage(message); 
-  };
-
-  const closePopup = () => {
-    setPopupMessage(null); 
+    setPopupMessage(message);
+    setIsMenuOpen(false);
   };
 
   return (
     <>
       <nav
-        className={`sticky top-0 z-50 py-6 transition-all duration-300 backdrop-blur-md ${
+        className={`fixed w-full z-50 transition-all duration-300 backdrop-blur-md ${
           isScrolled ? "bg-orange-100 shadow-md bg-opacity-30" : "bg-orange-200"
         }`}
       >
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <img
-            src="/HOW-Logo.png"
-            className="w-24 h-auto"
-            alt="House of Wisdom Logo"
-          />
-          <Link href="/" className="text-2xl font-bold text-gray-800">
-            House of Wisdom
-          </Link>
-
-          <ul className="flex space-x-6">
-            <li>
-              <Link href="/" className="text-gray-600 hover:text-gray-800">
-                Home
+        <div className="max-w-6xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center space-x-4">
+              <img
+                src="/HOW-Logo.png"
+                className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
+                alt="House of Wisdom Logo"
+              />
+              <Link 
+                href="/" 
+                className="text-lg sm:text-xl font-bold text-gray-800 hover:text-gray-600 transition-colors"
+              >
+                House of Wisdom
               </Link>
-            </li>
-            <li>
-              <a
-                href="#about"
-                onClick={(e) => handleSmoothScroll(e, "about")}
-                className="text-gray-600 hover:text-gray-800"
+            </div>
+            <button
+              className="md:hidden p-2 rounded-lg hover:bg-orange-300 transition-colors"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle navigation"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#programs"
-                onClick={(e) => handleSmoothScroll(e, "about")}
-                className="text-gray-600 hover:text-gray-800"
-              >
-                Programs
-              </a>
-            </li>
-            <li>
-              <button
-                onClick={() => handlePopup("We're working on it! On the way...")}
-                className="text-gray-600 hover:text-gray-800"
-              >
-                Publications
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => handlePopup("We're working on it! On the way...")}
-                className="text-gray-600 hover:text-gray-800"
-              >
-                Team
-              </button>
-            </li>
-            <li>
+                {isMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+
+            <div className="hidden md:flex items-center space-x-6">
+              {[
+                { label: "Home", href: "/" },
+                { label: "About", href: "#about", scroll: true },
+                { label: "Programs", href: "#prog", scroll: true },
+                { label: "Publications", popup: "We're working on it! Publications are on the way..." },
+                { label: "Team", popup: "We're working on it! Our Team section is on the way..." },
+              ].map((item) => (
+                <div key={item.label}>
+                  {item.popup ? (
+                    <button
+                      onClick={() => handlePopup(item.popup)}
+                      className="text-gray-600 hover:text-gray-800 transition-colors"
+                    >
+                      {item.label}
+                    </button>
+                  ) : item.scroll ? (
+                    <a
+                      href={item.href}
+                      onClick={(e) => handleSmoothScroll(e, item.href.slice(1))}
+                      className="text-gray-600 hover:text-gray-800 transition-colors"
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="text-gray-600 hover:text-gray-800 transition-colors"
+                    >
+                      {item.label}
+                    </Link>
+                  )}
+                </div>
+              ))}
               <Link
                 href="/donate"
-                className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded"
+                className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded transition-colors"
               >
                 Donate
               </Link>
-            </li>
-          </ul>
+            </div>
+          </div>
+
+          <div
+            className={`md:hidden transition-all duration-300 overflow-hidden ${
+              isMenuOpen ? "max-h-96" : "max-h-0"
+            }`}
+          >
+            <div className="pt-2 pb-3 space-y-1">
+              {[
+                { label: "Home", href: "/" },
+                { label: "About", href: "#about", scroll: true },
+                { label: "Programs", href: "#prog", scroll: true },
+                { label: "Publications", popup: "We're working on it! Publications are on the way..." },
+                { label: "Team", popup: "We're working on it! Our Team section is on the way..." },
+              ].map((item) => (
+                <div key={item.label} className="block px-3 py-2">
+                  {item.popup ? (
+                    <button
+                      onClick={() => handlePopup(item.popup)}
+                      className="w-full text-left text-gray-600 hover:text-gray-800 transition-colors"
+                    >
+                      {item.label}
+                    </button>
+                  ) : item.scroll ? (
+                    <a
+                      href={item.href}
+                      onClick={(e) => handleSmoothScroll(e, item.href.slice(1))}
+                      className="block text-gray-600 hover:text-gray-800 transition-colors"
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="block text-gray-600 hover:text-gray-800 transition-colors"
+                    >
+                      {item.label}
+                    </Link>
+                  )}
+                </div>
+              ))}
+              <div className="px-3 py-2">
+                <Link
+                  href="/donate"
+                  className="block w-full text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded transition-colors"
+                >
+                  Donate
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
-      {popupMessage && <Popup message={popupMessage} onClose={closePopup} />}
+
+      {popupMessage && <Popup message={popupMessage} onClose={() => setPopupMessage(null)} />}
+      
+      <div className="h-20 sm:h-24" />
     </>
   );
 };
