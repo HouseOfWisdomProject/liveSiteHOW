@@ -88,32 +88,22 @@ const HomePage = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-8">About Us</h2>
           <p className="text-lg leading-relaxed mb-8">
-            Our primary purpose is to help immigrants, refugees, and international students from children to adults
-            academically and socially in their transition to America. We are committed to helping with school
-            assignments, exam preparation, and inspiring individuals to achieve high grades. Our ultimate goal is to
-            empower people with the skills and critical thinking abilities necessary to have a positive lifestyle in
-            America.
+            Our primary purpose is to support marginalized and disadvantaged students, from children to adults, as they navigate their academic and social transitions, including their journey to higher education. We are committed to helping with school assignments, exam preparation, and inspiring individuals to achieve their full potential. We also focus on mental health and well-being, providing students with the support they need to thrive both academically and emotionally. Our ultimate goal is to empower people with the skills, critical thinking abilities, and emotional resilience necessary for a positive and successful lifestyle, both in their academic journeys and in higher education.
           </p>
           <p className="text-lg leading-relaxed mb-8">
-            Ahmad Hilal Abid, who emigrated from Afghanistan to the U.S. when he was 17 years old, started a small class
-            with 20 immigrants and refugee students in his garage at home in 2020. He began by helping students with
-            school assignments in Math and English. His services became so popular in the community, necessitating a move
-            to a larger space in Lynnwood, Wash. The House of Wisdom now helps over 100 students and increased the number
-            of subjects it offers tutoring in thanks to a volunteer staff with diverse areas of expertise.
+            Ahmad Hilal Abid, who emigrated from Afghanistan to the U.S. at 17 years old, began this journey in 2020 by starting a small class with 20 marginalized and disadvantaged students in his home garage. He initially focused on helping students with Math and English assignments. As demand grew within the community, The House of Wisdom expanded into a larger space in Lynnwood, WA, and now supports over 100 students. Thanks to a diverse team of volunteers, the organization has also expanded the subjects it offers tutoring in, including college prep and other higher education-related subjects.
           </p>
           <p className="text-lg leading-relaxed mb-8">
-            At the start, he named this small class the House of Wisdom. The House of Wisdom was a magnificent Baghdad,
-            Iraq library built by Caliph Haroun Al-Rasheed (ruled 786 – 809 CE). Christians, Jews, Muslims, and scholars
-            from around the world researched, studied and translated books at the House of Wisdom. It was where both male
-            and female scholars, translators, scientists, scribes, authors, and much more from all over the world came
-            together. They would meet for discussions and discourse on important works in various languages, including
-            Arabic, Farsi, Aramaic, Hebrew, Syriac, Greek, and Latin. Famous scholars of the time that studied at the
-            House of Wisdom include the Father of Algebra, Muhammad ibn Musa al-Khwarizmi.
+            Beyond academics, we also prioritize mentoring and emotional support. Our mentors work closely with students to provide guidance, build self-confidence, and help them navigate challenges in both their academic and personal lives. Mental health is a critical aspect of success, and we strive to create a safe and supportive environment where students can address emotional struggles and focus on growth.
           </p>
           <p className="text-lg leading-relaxed mb-8">
-            Ahmad Hilal Abid believes strongly in diversity, equality, and fairness. He believes that “if we put our hands
-            and minds together and accept our differences, we will be able to restore the House of Wisdom and spread
-            knowledge and love through community and bring people together from different ethnicities and backgrounds.”
+            The small class was named The House of Wisdom after the famous library in Baghdad, Iraq, built by Caliph Haroun Al-Rasheed (ruled 786–809 CE). This historic center of learning brought together scholars from various backgrounds to study, research, and translate texts. Male and female scholars, translators, scientists, scribes, and authors gathered there to engage in discussions and advance knowledge in languages such as Arabic, Farsi, Aramaic, Hebrew, Syriac, Greek, and Latin. The House of Wisdom produced groundbreaking scholars, such as the Father of Algebra, Muhammad ibn Musa al-Khwarizmi.
+          </p>
+          <p className="text-lg leading-relaxed mb-8">
+            Ahmad Hilal Abid believes deeply in diversity, equality, and fairness. He states, “If we put our hands and minds together and embrace our differences, we can restore the House of Wisdom, spread knowledge and love, and bring people together from different ethnicities and backgrounds.”
+          </p>
+          <p className="text-lg leading-relaxed mb-8">
+            Let us work together to empower marginalized and disadvantaged students, from K-12 to higher education, through education, community, mentoring, and mental health support.
           </p>
         </div>
 
