@@ -18,7 +18,7 @@ const programs = [
     image: "/english-program.jpg",
   },
   {
-    title: "Programming and Computer Scicence",
+    title: "Programming and Computer Science",
     description:
       "Our Brand new Coding classes will teach you how to create fun games in Scratch, and also code programs using Python! We give out 2 lectures every week, with a personal tutor to help every step of the way!",
     image: "/how-coding.jpg",
