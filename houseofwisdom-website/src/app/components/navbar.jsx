@@ -126,7 +126,7 @@ const Navbar = () => {
                 </div>
               ))}
               <Link
-                href="/donate"
+                href="https://www.zeffy.com/en-US/embed/donation-form/donate-to-make-a-difference-11511?modal=true"
                 className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded transition-colors"
               >
                 Donate
