@@ -97,7 +97,7 @@ const Navbar = () => {
                 { label: "About", href: "#about", scroll: true },
                 { label: "Programs", href: "#prog", scroll: true },
                 { label: "Publications", popup: "We're working on it! Publications are on the way..." },
-                { label: "Team", popup: "We're working on it! Our Team section is on the way..." },
+                { label: "Team", href: "/TeamPage" },
               ].map((item) => (
                 <div key={item.label}>
                   {item.popup ? (
@@ -145,7 +145,7 @@ const Navbar = () => {
                 { label: "About", href: "#about", scroll: true },
                 { label: "Programs", href: "#prog", scroll: true },
                 { label: "Publications", popup: "We're working on it! Publications are on the way..." },
-                { label: "Team", popup: "We're working on it! Our Team section is on the way..." },
+                { label: "Team", href:"/TeamPage" },
               ].map((item) => (
                 <div key={item.label} className="block px-3 py-2">
                   {item.popup ? (
