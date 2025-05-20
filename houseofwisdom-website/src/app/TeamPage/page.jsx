@@ -59,6 +59,13 @@ const teamMembers = [
     role: "Project Manager",
     image: "/team/natallycelaya.jpg", 
     bio:"Hi! I’m Natally Celaya-Martinez, a third-year student at the University of Washington in Seattle, currently studying Biology (Physiology). I deeply enjoy being a part of the House of Wisdom team, as it allows me to engage with my community in meaningful ways while supporting the mission of accessible education. As a student on the pre-med track, I'm passionate about becoming a physician that supports health equity and uplifting underrepresented voices, and I’m grateful that House of Wisdom gives me the opportunity to align with these values. "
+  },
+  {
+    id:8,
+    name: "Mukhlis Al-Qadri",
+    role: "Project Manager",
+    image: "/team/mukhlis.jpg", 
+    bio: "Mukhlis has been involved with the House of Wisdom since May 2024 as project manager, and he also volunteers as a tutor.He is currently taking undergraduate in Edmonds College. He is pursuing a degree in aeronautical engineering, where he hopes to achieve his dream and propagate the aeronautical industry in his country. He is also working part-time in campus as IT Staff. He loves being involved in his community and is passionate about helping those around him. In his free time, he enjoys drawing and reading books."
   }
 ];
 
@@ -101,7 +108,6 @@ const TeamMemberCard = ({ member }) => {
 const TeamPage = () => {
   return (
     <div className="bg-gray-100 text-gray-800">
-      {/* Hero Section with Shaded Translucent Background */}
       <section
         className="bg-cover bg-center py-32 relative"
         style={{
@@ -109,7 +115,6 @@ const TeamPage = () => {
         }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
-        {/* Overlay for translucency */}
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-4xl font-bold text-white mb-4">Our Team</h1>
           <p className="text-lg text-white mb-8">
