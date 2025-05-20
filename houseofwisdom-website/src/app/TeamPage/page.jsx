@@ -61,7 +61,7 @@ const teamMembers = [
     bio:"Hi! I’m Natally Celaya-Martinez, a third-year student at the University of Washington in Seattle, currently studying Biology (Physiology). I deeply enjoy being a part of the House of Wisdom team, as it allows me to engage with my community in meaningful ways while supporting the mission of accessible education. As a student on the pre-med track, I'm passionate about becoming a physician that supports health equity and uplifting underrepresented voices, and I’m grateful that House of Wisdom gives me the opportunity to align with these values. "
   },
   {
-    id:8,
+    id:9,
     name: "Mukhlis Al-Qadri",
     role: "Project Manager",
     image: "/team/mukhlis.jpg", 
