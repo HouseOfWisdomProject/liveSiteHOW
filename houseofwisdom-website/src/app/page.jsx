@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import JoinUsBox from "./components/JoinUsBox";
 import Programs from "./components/Programs";
+import PosterModal from "./components/PosterModal";
 
 
 const programs = [
@@ -25,6 +26,8 @@ const programs = [
   },
 ];
 
+
+
 const HomePage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -37,8 +40,21 @@ const HomePage = () => {
     return () => window.removeEventListener("scroll", handleScroll); // Cleanup
   }, []);
 
+  const [showPoster, setShowPoster] = useState(true); 
+
+    useEffect(() => {
+      const timer = setTimeout(() => setShowPoster(false), 400000); 
+      return () => clearTimeout(timer);
+    }, []);
+
+
   return (
     <div className="bg-gray-100 text-gray-800">
+      <PosterModal
+      show={showPoster}
+      onClose={() => setShowPoster(false)}
+      imageSrc="/legalflyer.png" 
+    />
       {/* Hero Section with Shaded Translucent Background */}
       <section
         className="bg-cover bg-center py-60 relative"
@@ -64,19 +80,19 @@ const HomePage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             <JoinUsBox
               title="Become a Student"
-              image="/student.jpg" // Static placeholder image
+              image="/student.jpg" 
               link="mailto:laith@houseofwisdomwa.org"
             />
             <JoinUsBox
               title="Become a Tutor"
-              image="/tutor.jpg" // Static placeholder image
+              image="/tutor.jpg" 
               link="mailto:laith@houseofwisdomwa.org"
             />
             <JoinUsBox
               title="Become a Partner"
-              image="/partner.jpg" // Static image
+              image="/partner.jpg" 
               link="mailto:ahmadhilalabid@houseofwisdomwa.org"
-              style={{ backgroundPosition: "center-60" }} // Ensures static positioning
+              style={{ backgroundPosition: "center-60" }} 
             />
           </div>
         </div>
