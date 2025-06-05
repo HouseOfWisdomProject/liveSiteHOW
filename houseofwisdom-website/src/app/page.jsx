@@ -50,19 +50,14 @@ const HomePage = () => {
 
   return (
     <div className="bg-gray-100 text-gray-800">
-      <PosterModal
-      show={showPoster}
-      onClose={() => setShowPoster(false)}
-      imageSrc="/legalflyer.png" 
-    />
       {/* Hero Section with Shaded Translucent Background */}
       <section
         className="bg-cover bg-center py-60 relative"
         style={{
-          backgroundImage: "url('/hero-.jpg')", // Static image for server consistency
+          backgroundImage: "url('/hero-.jpg')", 
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay for translucency */}
+        <div className="absolute inset-0 bg-black opacity-50"></div> 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-4xl font-bold text-white mb-4">
             Empowering Education for Marginalized Communities
@@ -131,7 +126,6 @@ const HomePage = () => {
         {/*YOUTUBE*/}
           <div className="mt-16">
             <div className="flex justify-center gap-8">
-              {/* Video 1 */}
               <div className="w-full max-w-lg h-80">
                 <iframe
                   className="w-full h-full rounded-lg shadow-lg"
@@ -142,7 +136,6 @@ const HomePage = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              {/* Video 2 */}
               <div className="w-full max-w-lg h-80">
                 <iframe
                   className="w-full h-full rounded-lg shadow-lg"

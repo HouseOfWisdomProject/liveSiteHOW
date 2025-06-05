@@ -47,7 +47,7 @@ const Navbar = () => {
           isScrolled ? "bg-orange-100 shadow-md bg-opacity-30" : "bg-orange-200"
         }`}
       >
-        <div className="max-w-6xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4">
               <img
@@ -96,7 +96,7 @@ const Navbar = () => {
                 { label: "Home", href: "/" },
                 { label: "About", href: "#about", scroll: true },
                 { label: "Programs", href: "#prog", scroll: true },
-                { label: "Publications", popup: "We're working on it! Publications are on the way..." },
+                { label: "Publications", href: "/PublicationsPage" },
                 { label: "Team", href: "/TeamPage" },
               ].map((item) => (
                 <div key={item.label}>
@@ -144,7 +144,7 @@ const Navbar = () => {
                 { label: "Home", href: "/" },
                 { label: "About", href: "#about", scroll: true },
                 { label: "Programs", href: "#prog", scroll: true },
-                { label: "Publications", popup: "We're working on it! Publications are on the way..." },
+                { label: "Publications", href: "/PublicationsPage" },
                 { label: "Team", href:"/TeamPage" },
               ].map((item) => (
                 <div key={item.label} className="block px-3 py-2">
