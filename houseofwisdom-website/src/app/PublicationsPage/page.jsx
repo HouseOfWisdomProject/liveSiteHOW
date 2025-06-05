@@ -2,28 +2,28 @@ import React from "react";
 
 const publications = [
   {
-    title: "Understanding Transformers",
+    title: "Class1",
     image: "/images/transformers.png",
     description:
-      "An in-depth exploration of transformer architectures, their applications in NLP, and recent innovations.",
+      "lorem ipsum",
   },
   {
-    title: "Ethical AI Design",
+    title: "Class 2",
     image: "/images/ethical_ai.jpg",
     description:
-      "A comprehensive guide to developing fair and unbiased machine learning models with real-world case studies.",
+      "Lorem ipsum",
   },
   {
-    title: "LLMs in Education",
+    title: "Class 3",
     image: "/images/llm_edu.jpg",
     description:
-      "Examines the role of large language models in modernizing educational tools and enhancing accessibility.",
+      "Lorem ipsum",
   },
   {
-    title: "Self-Supervised Learning",
+    title: "Class 4",
     image: "/images/self_supervised.png",
     description:
-      "Breaks down self-supervised methods and their transformative impact on representation learning.",
+      "Lorem ipsum",
   },
 ];
 
