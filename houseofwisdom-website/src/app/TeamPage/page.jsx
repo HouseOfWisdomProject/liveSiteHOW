@@ -111,7 +111,7 @@ const TeamPage = () => {
       <section
         className="bg-cover bg-center py-32 relative"
         style={{
-          backgroundImage: "url('/hero-.jpg')", // Replace with actual image path
+          backgroundImage: "url('/hero-.jpg')", 
         }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
