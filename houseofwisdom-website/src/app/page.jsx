@@ -76,17 +76,17 @@ const HomePage = () => {
             <JoinUsBox
               title="Become a Student"
               image="/student.jpg" 
-              link="mailto:laith@houseofwisdomwa.org"
+              link="mailto:danyaa@houseofwisdomwa.org"
             />
             <JoinUsBox
               title="Become a Tutor"
               image="/tutor.jpg" 
-              link="mailto:laith@houseofwisdomwa.org"
+              link="mailto:mukhils.qadri@thehouseofwisdomwa.org?cc=kaydahlehman@gmail.com,danyaa@houseofwisdomwa.org,abby@thehouseofwisdomwa.org"
             />
             <JoinUsBox
               title="Become a Partner"
               image="/partner.jpg" 
-              link="mailto:ahmadhilalabid@houseofwisdomwa.org"
+              link="mailto:danyaa@houseofwisdomwa.org"
               style={{ backgroundPosition: "center-60" }} 
             />
           </div>
