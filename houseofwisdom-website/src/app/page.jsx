@@ -63,7 +63,7 @@ const HomePage = () => {
             Empowering Education for Marginalized Communities
           </h1>
           <p className="text-lg text-white mb-8">
-            Join us in creating equitable access to learning opportunities tailored to diverse needs.
+            Join us in our mission to provide free, inclusive academic support and culturally responsive mentorship to underserved youth—especially immigrant, refugee, and first-generation students—while fostering their overall well-being through safe, empowering environments that promote belonging, resilience, and lifelong learning.
           </p>
         </div>
       </section>
