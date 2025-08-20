@@ -34,34 +34,41 @@ const teamMembers = [
   },
   {
     id: 5,
-    name: "Laith Darwish",
-    role: "Vice President of Operations",
-    image: "/team/laithdarwish.jpg", 
-    bio: "Laith is our VP of operations, who is in charge of virtually everything when it comes to the running of classes, programs and management. He runs several classes and programs behind the scenes for House of Wisdom and was a UW-Bothell graduate. We would not be here without all his dedication and work!",
+    name: "Linda Castejon",
+    role: "Vice President of Education",
+    image: "/team/lindacastejon.jpg",
+    bio: "Linda believes individualized and personalized tutoring is crucial. It directly addresses the unique needs and learning styles of each individual, allowing them to truly reach their full potential. Her desire to contribute to education steams from a profound passion for lifelong learning and books. Her approach helps our members foster their curiosity, problem-solving, well-being, self-belief, and inclusion. Linda Joined the House of Wisdom three years ago. She holds a Bachelor's Degree in Accounting and works as a Financial Aid Program Specialist 3 at Edmonds College, where she is pursuing her Project Management Certificate."
   },
   {
     id: 6,
+    name: "Danya Allsh",
+    role: "Administrative and Finance Assistant",
+    image: "/team/danyaallsh.jpg", 
+    bio: "Danya Allsh is currently studying Business Administration with a focus on Supply Chain Management at the University of Washington Bothell. At House of Wisdom, she serves as the Administrative and Finance Assistant, where she helps with day to day operations and supports behind the scenes efforts to keep things running smoothly. She is excited to contribute to an organization that's making a real impact in the lives of students and communities.",
+  },
+  {
+    id: 7,
     name: "Abby Williams",
     role: "Liason Ambassador",
     image: "/team/abbywilliams.png", 
     bio: "Abby serves as the liaison Ambassador to the University of Washington, facilitating connections between the university’s programs and the House of Wisdom. Additionally, she is a Project Manager for the Lake City location where she cultivates an empowering learning environment for tutors and students. Currently completing her undergraduate degree in Educational Policy and Research with a strong interest in global education development, Abby is deeply committed to advancing the mission of The House of Wisdom and supporting its expansion to serve diverse communities.",
   },
   {
-    id:7,
+    id:8,
     name: "Kaydah Lehman",
     role: "Project Manager",
     image: "/team/kaydahlehmanjpg.jpg", 
     bio:"Kaydah Lehman is a Project Manager at the House of Wisdom, where she works closely with students and tutors to ensure classes run efficiently. She is currently pursuing an Associate’s degree in Integrated Studies at Cascadia College. Before joining the House of Wisdom, Kaydah spent three years tutoring students in her local community. Outside of work and academics, she volunteers as a volleyball coach and is passionate about mentoring and empowering youth."
   },
    {
-    id:8,
+    id:9,
     name: "Natally Celaya-Martinez ",
     role: "Project Manager",
     image: "/team/natallycelaya.jpg", 
     bio:"Hi! I’m Natally Celaya-Martinez, a third-year student at the University of Washington in Seattle, currently studying Biology (Physiology). I deeply enjoy being a part of the House of Wisdom team, as it allows me to engage with my community in meaningful ways while supporting the mission of accessible education. As a student on the pre-med track, I'm passionate about becoming a physician that supports health equity and uplifting underrepresented voices, and I’m grateful that House of Wisdom gives me the opportunity to align with these values. "
   },
   {
-    id:9,
+    id:10,
     name: "Mukhlis Al-Qadri",
     role: "Project Manager",
     image: "/team/mukhlis.jpg", 
