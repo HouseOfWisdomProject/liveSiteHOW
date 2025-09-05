@@ -68,31 +68,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* JOIN US Section */}
-      <section className="py-16" id="joinUS">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8">Join Us</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-            <JoinUsBox
-              title="Become a Student"
-              image="/student.jpg" 
-              link="mailto:danyaa@houseofwisdomwa.org"
-            />
-            <JoinUsBox
-              title="Become a Tutor"
-              image="/tutor.jpg" 
-              link="mailto:mukhils.qadri@thehouseofwisdomwa.org?cc=kaydahlehman@gmail.com,danyaa@houseofwisdomwa.org,abby@thehouseofwisdomwa.org"
-            />
-            <JoinUsBox
-              title="Become a Partner"
-              image="/partner.jpg" 
-              link="mailto:danyaa@houseofwisdomwa.org"
-              style={{ backgroundPosition: "center-60" }} 
-            />
-          </div>
-        </div>
-      </section>
-      
+      <Programs programs={programs}/>      
       
       {/* About Section */}
       <section className="py-16" id="about">
@@ -118,7 +94,31 @@ const HomePage = () => {
           </p>
         </div>
 
-        <Programs programs={programs}/>
+        {/* JOIN US Section */}
+      <section className="py-16" id="joinUS">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8">Join Us</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <JoinUsBox
+              title="Become a Student"
+              image="/student.jpg" 
+              link="mailto:danyaa@houseofwisdomwa.org"
+            />
+            <JoinUsBox
+              title="Become a Tutor"
+              image="/tutor.jpg" 
+              link="mailto:mukhils.qadri@thehouseofwisdomwa.org?cc=kaydahlehman@gmail.com,danyaa@houseofwisdomwa.org,abby@thehouseofwisdomwa.org"
+            />
+            <JoinUsBox
+              title="Become a Partner"
+              image="/partner.jpg" 
+              link="mailto:danyaa@houseofwisdomwa.org"
+              style={{ backgroundPosition: "center-60" }} 
+            />
+          </div>
+        </div>
+      </section>
+        
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10" id="prog">
           <p className="text-lg leading-relaxed mb-8">Together, we'll bridge the gap in educational inequality.</p>
