@@ -96,6 +96,7 @@ const Navbar = () => {
                 { label: "Home", href: "/" },
                 { label: "About", href: "#about", scroll: true },
                 { label: "Programs", href: "#prog", scroll: true },
+                { label: "Blog", href: "/BlogPage" },
                 { label: "Publications", href: "/PublicationsPage" },
                 { label: "Team", href: "/TeamPage" },
               ].map((item) => (
