@@ -107,7 +107,7 @@ const HomePage = () => {
             <JoinUsBox
               title="Become a Tutor"
               image="/tutor.jpg" 
-              link="mailto:mukhils.qadri@thehouseofwisdomwa.org?cc=kaydahlehman@gmail.com,danyaa@houseofwisdomwa.org,abby@thehouseofwisdomwa.org"
+              link="mailto:idris.ahmad@thehouseofwisdomwa.org"
             />
             <JoinUsBox
               title="Become a Partner"
