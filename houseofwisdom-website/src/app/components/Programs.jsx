@@ -53,7 +53,7 @@ const ProgramCard = ({ program }) => {
               style={{ objectFit: "cover" }}
             />
             <p className="text-gray-700 text-justify">{program.description}</p>
-            <p className = "text-orange-700 text-left text-s py-3">For more information:contact laith@thehouseofwisdomwa.org</p>
+            <p className = "text-orange-700 text-left text-s py-3">For more information: contact idris.ahmad@thehouseofwisdomwa.org and john.parlotz@thehouseofwisdomwa.org</p>
           </div>
         </div>
       )}
